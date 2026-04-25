@@ -117,6 +117,7 @@ public class TestLoanClass {
 		  totalInterest += interest;
 		  myLoanAmount = 0.0;
 		  month++;
+	  }
 
 	  double interestSaved = l.getTotalInterest() - totalInterest;
 	  System.out.printf("Total interest $%.2f%nTotal interest saved $%.2f%nTotal months %d %n",
