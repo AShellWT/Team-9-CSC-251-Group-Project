@@ -47,7 +47,7 @@ public class Loan {
 	    return loanAmount;
 	  }
 
-	  /** Set a newloanAmount */
+	  /** Set a new loanAmount */
 	  public void setLoanAmount(double loanAmount) {
 	    this.loanAmount = loanAmount;
 	  }
@@ -66,11 +66,9 @@ public class Loan {
 	    return totalPayment;    
 	  }
 	  
-	  // 11/9
 	  /** Find total interest */
 	  public double getTotalInterest() {
-	    // to do
-		// totalInterest is the difference of total payment minus loan amount
+	    double totalInterest = getTotalPayment() - loanAmount;
 	    return totalInterest;    
 	  }
 
