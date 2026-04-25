@@ -54,6 +54,12 @@ public class TestLoanClassTemplate {
 	  double principal = 0.0;
 	  double totalInterest = 0.0;
 
+	  	  interest = myLoanAmount * myMonthlyInterestRate;
+		  principal = myMonthlyPayment - interest;
+		  myLoanAmount = myLoanAmount - principal - extraPay;
+		  totalInterest += interest;
+		  month++;  
+
 	  while (myLoanAmount >= myMonthlyPayment) {
 		  // to do A1 same as A2
 		  interest = myLoanAmount * myMonthlyInterestRate;
