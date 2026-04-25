@@ -58,7 +58,7 @@ public class TestLoanClass {
 		  // to do A1 same as A2
 		  interest = myLoanAmount * myMonthlyInterestRate;
 		  principal = myMonthlyPayment - interest;
-		  myLoanAmount = myLoanAmount - principal - extraPay;
+		  myLoanAmount = myLoanAmount - principal;
 		  totalInterest += interest;
 		  month++;  
 		  
